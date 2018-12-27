@@ -17,7 +17,7 @@ body {
     text-align: center;
     background-color: honeydew;
     display: flex;
-    height: 90vh;
+    height: 98vh;
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +40,6 @@ body {
                 0 0 0 16px deepskyblue;
     background-image: url("../images/intro-bg.jpg");
     background-blend-mode: color-burn;
-    /* display: none; */
 }
 
 .intro.hide {
@@ -203,22 +202,32 @@ body {
 
 @media only screen and (max-width: 1440px) {
     .intro {
-        top: 4%;
-        height: 607px;
+        height: 585px;
         width: 647px;
-        overflow: hidden;
     }
+
+    .intro h1 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
     .characters .name {
         padding: 0;
     }
+
     .display {
-        margin-top: 20px;
-        padding: 14px 5px;
+        position: relative;
+        font-size: 12px;
+        top: 8px;
+        padding: 0 5px;
     }
+
     .intro .press-enter {
         padding: 5px 0;
     }
+
     .characters h3 {
         padding: 2px 0;
     }
+
 }
