@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arcade Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+    <div class="display">
+        <div class="lives">Lives: <span data-lives>5</span></div>
+        <div class="score">Score: <span data-score>0</span></div>
+        <div class="level">Level: <span data-level>1</span></div>
+    </div>
+    <div class="shortcuts hide">
+        <p><strong>Space</strong> to play/pause.</p>
+        <p><strong>M</strong> to mute.</p>
+        <p><strong>R</strong> to restart.</p>
+    </div>
+    <div class="intro">
+        <h1>Arcade Game</h1>
+        <div class="characters">
+            <div selected="boy" class="player selected">
+                <img id="selector" src="images/Selector.png" alt="Player Selected">
+                <img id="selected" src="images/char-boy.png" alt="Boy" title="Boy">
+            </div>
+            <p class="name">Boy</p>
+            <h3>Select player</h3>
+            <div id="boy" class="player active">
+                <img src="images/char-boy.png" alt="Boy" title="Boy">
+            </div>
+            <div id="pink" class="player">
+                <img src="images/char-pink-girl.png" alt="Pink Girl">
+            </div>
+            <div id="horn" class="player">
+                <img src="images/char-horn-girl.png" alt="Horn Girl">
+            </div>
+            <div id="cat" class="player">
+                <img src="images/char-cat-girl.png" alt="Cat Girl">
+            </div>
+            <div id="princess" class="player">
+                <img src="images/char-princess-girl.png" alt="Princess Girl">
+            </div>
+            <p class="press-enter">Press enter to start</p>
+        </div>
+        <div class="options">
+            <button new-game>New Game</button>
+            <button load-game>Load Game</button>
+        </div>
+    </div>
+
+    <!-- Audio bt https://freesound.org/ -->
+    <audio id="audioBg" loop>
+        <source src="audio/background.mp3" type="audio/mp3">
+    </audio>
+    <!-- Audio bt https://freesound.org/ -->
+    <audio id="audioLevelUp">
+        <source src="audio/levelup.wav" type="audio/wav">
+    </audio>
+    <!-- Audio bt https://freesound.org/ -->
+    <audio id="audioCrash">
+        <source src="audio/crash.wav" type="audio/wav">
+    </audio>
+
+    <script src="js/resources.js"></script>
+    <script src="js/Environment.js"></script>
+    <script src="js/Entity.js"></script>
+
+    <script src="js/Ramp.js"></script>
+    <script src="js/DirtyBlock.js"></script>
+    <script src="js/Stone.js"></script>
+    <script src="js/Grass.js"></script>
+    <script src="js/Shadow.js"></script>
+    <script src="js/Tree.js"></script>
+    <script src="js/Plant.js"></script>
+    <script src="js/Door.js"></script>
+
+    <script src="js/Character.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Player.js"></script>
+
+    <script src="js/Filter.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+
+</html>

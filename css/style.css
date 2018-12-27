@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "PressStart";
+    src: url('../font/PressStart2P-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "PressStart", Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    text-align: center;
+    background-color: honeydew;
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    position: absolute;
+    height: 707px;
+    width: 707px;
+    background-color: deepskyblue;
+    z-index: 999;
+    color: #fff;
+    visibility: visible;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 0 8px #fff,
+                0 0 0 16px deepskyblue;
+    background-image: url("../images/intro-bg.jpg");
+    background-blend-mode: color-burn;
+    /* display: none; */
+}
+
+.intro.hide {
+    animation: hide 0.9s forwards;
+}
+
+.intro h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.characters h3 {
+    font-size: 15px;
+    position: relative;
+    padding: 10px 0;
+}
+
+.characters .name {
+    font-size: 9px;
+    padding: 4px;
+    display: inline-block;
+    margin: 0;
+}
+
+.characters .player {
+    width: 101px;
+    height: 101px;
+    display: inline-block;
+    border-radius: 4px;
+    border: 2px solid white;
+    position: relative;
+    margin: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.characters .player:not(:first-child) {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.characters .player:not(:first-child):hover {
+    border-color: yellow;
+    transform: scale(1.05);
+}
+.characters .player:not(:first-child).active {
+    border-color: yellow;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 2px yellow;
+}
+
+.characters img {
+    position: relative;
+    top: -46px;
+    margin: auto;
+}
+
+.characters .player.selected {
+    position: relative;
+    display: block;
+    margin: 24px auto;
+    height: 171px;
+    background: none;
+    border: none;
+    top: 46px;
+}
+
+.characters .player.selected #selector,
+.characters .player.selected #selected
+{
+    position: absolute;
+}
+
+.characters .player.selected #selected {
+    background: none;
+}
+
+.intro .press-enter {
+    padding: 24px 0;
+    animation: blink 0.7s steps(2, end) infinite forwards;
+}
+
+.options button {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 40px;
+    margin: 5px;
+}
+
+.display {
+    font-size: 14px;
+    width: 505px;
+    margin: 0 auto;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    padding: 15px 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+[data-lives] {
+    color: violet;
+}
+
+[data-score] {
+    color: blue;
+}
+
+[data-level] {
+    color: darkorange;
+}
+
+.shortcuts {
+    position: absolute;
+    bottom: 2%;
+    color: #555;
+    font-size: 9px;
+    text-align: left;
+    line-height: 1.8em;
+}
+
+.shortcuts p {
+    display: inline-block;
+}
+
+.shortcuts strong {
+    font-size: #000;
+    border: 1px solid #666;
+    padding: 3px;
+}
+
+.shortcuts.hide {
+    display: none;
+}
+
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .intro {
+        top: 4%;
+    }
+}
