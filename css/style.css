@@ -126,11 +126,16 @@ body {
 
 .options button {
     background: none;
-    border: 2px solid #fff;
     color: #fff;
+    border: 2px solid #fff;
     cursor: pointer;
     padding: 15px 40px;
     margin: 5px;
+}
+
+.options button:hover {
+    background-color: #fff;
+    color: deepskyblue;
 }
 
 .display {
