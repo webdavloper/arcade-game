@@ -11,7 +11,7 @@ The project is about re-creating a classic game based on the famous arcade game 
 Access https://davidsilvasp.github.io/arcade-game/
 
 You can also:
-  - Clone this repository running `git clone https://github.com/davidsilvasp/arcade-game-master-pt-br.git`
+  - Clone this repository running `git clone https://github.com/davidsilvasp/arcade-game.git`
   - Download this repository to your computer
 
 ___
