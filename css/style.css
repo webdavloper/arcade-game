@@ -201,8 +201,24 @@ body {
     }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1440px) {
     .intro {
         top: 4%;
+        height: 607px;
+        width: 647px;
+        overflow: hidden;
+    }
+    .characters .name {
+        padding: 0;
+    }
+    .display {
+        margin-top: 20px;
+        padding: 14px 5px;
+    }
+    .intro .press-enter {
+        padding: 5px 0;
+    }
+    .characters h3 {
+        padding: 2px 0;
     }
 }
