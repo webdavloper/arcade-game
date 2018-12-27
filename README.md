@@ -16,7 +16,7 @@ You can also:
 
 ___
 
-# Game Description
+# How the game works
 
 The game area consists of 20 tiles, and the player is free to move through all of them, except through fixed objects (tree and plant). The main objective of the game is to make the player reach the opposite side without being hit by any of the enemies.
 
@@ -37,7 +37,7 @@ The delay happens when:
 - The player has reached the other side
 
 
-### Rules
+### Game Description
 - Enemies appear randomly in the area of stones
 - Every level that the player reaches, the enemy's speed is increased
 - Every 2 levels, 1 new enemy is added to the game
