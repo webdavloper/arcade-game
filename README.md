@@ -75,4 +75,4 @@ ___
 ___
 
 # Resources:
-All all the audios utilized are from [Freesound](https://freesound.org)
+All the audios utilized are from [Freesound](https://freesound.org)
