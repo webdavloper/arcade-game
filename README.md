@@ -8,7 +8,7 @@ The project is about re-creating a classic game based on the famous arcade game 
 
 # Getting Started
 
-Access https://davidsilvasp.github.io/arcade-game/
+Access https://webdavloper.github.io/arcade-game/
 
 You can also:
   - Clone this repository running `git clone https://github.com/davidsilvasp/arcade-game.git`
